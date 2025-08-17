@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-# calico-cloud-demokit
-Kubernetes demo kit to showcase Calico Cloud microsegmentation, observability, and threat defense.
-=======
+<p align="center">
+  <img width="382" height="125" alt="Project_Calico_logo" src="https://github.com/user-attachments/assets/1820c808-9445-447c-bdf1-d329b1a570c4" />
+</p>
+
 # Calico Cloud Demo Workshop 🚀  
 
 Welcome to the **Calico Cloud Demo Workshop** — your hands-on guide to experiencing **enterprise-grade Kubernetes security and observability**.  
