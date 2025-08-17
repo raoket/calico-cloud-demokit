@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: yaobank
+  namespace: yaobank
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /bank
+        pathType: Prefix
+        backend:
+          service:
+            name: customer
+            port:
+              number: 80

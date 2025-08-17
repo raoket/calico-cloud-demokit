@@ -1,0 +1,52 @@
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Python (if you use helper scripts)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+venv/
+
+# Node / JS (in case of UI helpers)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Helm / K8s
+charts/*.tgz
+*.release.yaml
+
+# Terraform (if infra scripts sneak in)
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# Secrets / creds
+*.pem
+*.key
+*.crt
+*.csr
+*.kubeconfig
+*.env
+.env.*
+secrets/
+config.json
+
+# Misc
+*.bak
+*.old
+*.orig
+*.out

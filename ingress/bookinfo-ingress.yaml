@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bookinfo
+  namespace: bookinfo
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /productpage
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /books
+        pathType: Prefix
+        backend:
+          service:
+            name: productpage
+            port:
+              number: 9080

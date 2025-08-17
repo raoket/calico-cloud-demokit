@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bookinfo
+  labels:
+    project: bookinfo
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: online-boutique
+  labels:
+    project: online-boutique
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: yaobank
+  labels:
+    project: yaobank
