@@ -46,8 +46,8 @@ kubectl apply -f ingress/bookinfo-ingress.yaml
 
 **Other applications:**
 
-* `/bank` → YaoBank
-* `/books` → Bookinfo
+* `/bank` → YaoBank  
+* `/books` → Bookinfo  
 
 ---
 
@@ -60,7 +60,9 @@ kubectl -n ingress-nginx get pods
 kubectl -n ingress-nginx get svc ingress-nginx-controller -o wide
 ```
 
-Expect controller pods `Running` and the `ingress-nginx-controller` service to have an external IP/hostname.
+Expect controller pods `Running` and the `ingress-nginx-controller` service to have an external IP/hostname.  
+
+⚠️ **Note**: On cloud providers (AWS, GCP, Azure), it may take **2–5 minutes** for the LoadBalancer service to provision and the DNS hostname to become reachable. If the EXTERNAL-IP/hostname shows up but isn’t responding yet, wait a bit — this is normal.
 
 2. **Browse or curl**
 
@@ -89,5 +91,5 @@ kubectl -n <ns> get svc,deploy,pod -o wide
 
 ## Navigation
 
-⬅️ [03 — Deploy Applications](./03-deploy-apps.md)
+⬅️ [03 — Deploy Applications](./03-deploy-apps.md)  
 ➡️ [05 — Tiers & Policies](./05-tiers-and-policies.md)
