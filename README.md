@@ -72,4 +72,3 @@ Implement **Zero Trust security** by layering policies across tiers (security â†
 ---
 
 ðŸ‘‰ Each page contains a concise overview plus a link to the official [Tigera Docs](https://docs.tigera.io) for complete details.
->>>>>>> 85f793d (Initial commit: Calico Cloud Demo Workshop)
